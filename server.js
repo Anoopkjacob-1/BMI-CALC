@@ -28,7 +28,7 @@ mongoose.connect(
 
 app.use('/app',routesurl)
 
-app.listen( process.env.PORT, () => {
+app.listen( process.env.PORT || 80, () => {
   console.log(`Server is running on ${process.env.PORT}`);
 });
 
